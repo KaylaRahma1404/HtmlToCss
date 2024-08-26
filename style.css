@@ -1,0 +1,241 @@
+* {
+    font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .page {
+    padding: 2rem;
+  }
+  
+  h1, h2, h3, h4, h5, p {
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #FFA50280;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .navbar .left-side, .navbar .center-side, .navbar .right-side {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    height: 15px;
+  }
+  
+  .navbar-item .navbar-link {
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+    color: #373F41;
+    font-weight: 600;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+  .navbar .sign-up a {
+    background-color: #F73C6B;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 12px;
+  }
+  
+  .first-page, .second-page, .third-page {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .first-page {
+    background-color: #FFA50280;
+  }
+  
+  .first-page .page-left-side img {
+    padding: 0 2rem;
+    max-height: 25rem;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .first-page .page-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .first-page .page-right-side .contact-us {
+    margin-right: auto;
+    padding: 8px 12px;
+    border: #F73C6B solid 2px;
+    text-decoration: none;
+    color: #F73C6B;
+    font-weight: 700;
+    display: inline-block;
+  }
+  
+  .first-page .page-right-side .contact-us:hover {
+    background-color: #F73C6B;
+    color: #fff !important;
+  }
+  
+  .second-page .page-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .second-page .card {
+    padding: 20px 15px;
+    background-color: #4F55DD;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .third-page .page-left-side img {
+    padding: 0 2rem;
+    max-height: 25rem;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .third-page .page-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  .fourth-page {
+    background-color: #e4e71ce1;
+  }
+  
+  .fourth-page .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .fourth-page .group img {
+    max-width: 25rem;
+    width: 100%;
+  }
+  
+  .footer {
+    background-color: #2ED57380;
+  }
+  
+  .footer .top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .footer .right {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 2rem;
+  }
+  
+  .footer .center .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .footer .center .group p {
+    font-weight: 600;
+  }
+  
+  .footer .center hr {
+    border: #505050 solid 0.5px;
+  }
+  
+  .footer .center .payment {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .center .payment img {
+    width: 35px;
+  }
+  
+  .footer .bottom p {
+    padding: 5px;
+    color: #636363;
+    font-size: 15px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page {
+      padding: 1rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar .left-side, .navbar .center-side, .navbar .right-side {
+      margin-bottom: 10px;
+    }
+  
+    .first-page, .second-page, .third-page {
+      flex-direction: column;
+    }
+  
+    .first-page .page-left-side img,
+    .third-page .page-left-side img {
+      padding: 0;
+    }
+  
+    .footer .top {
+      flex-direction: column;
+    }
+  
+    .footer .right {
+      padding: 0;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    .footer .center .group {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar .center-side {
+      flex-direction: column;
+    }
+  
+    .footer .center .group {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
